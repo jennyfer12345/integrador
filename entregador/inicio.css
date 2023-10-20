@@ -1,0 +1,106 @@
+/* Estilos para o corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(129, 194, 206);
+}
+/* Estilos para o cabeçalho */
+header {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+/* Estilos para a barra de navegação */
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+nav h3 {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.content {
+  display: grid;
+  border-radius: 20px;
+  height: 480px;
+  width: 900px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -1%);
+  top: 14%;
+}
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(129, 194, 206);
+}
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar {
+  width: 20px;
+  height: 6px;
+  border: 2px solid #708090;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bar:hover {
+  background-color: #708090;
+}
+input {
+  display: none;
+}
+.imagem {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+.imagens {
+  width: 20%;
+  transition: 0.6s;
+}
+.imagens img {
+  width: 100%;
+  height: 100%;
+}
+#imagem1:checked ~ .g1 {
+  margin-left: 0;
+}
+#imagem2:checked ~ .g1 {
+  margin-left: -20%;
+}
+#imagem3:checked ~ .g1 {
+  margin-left: -40%;
+}
+#imagem4:checked ~ .g1 {
+  margin-left: -60%;
+}
+#imagem5:checked ~ .g1 {
+  margin-left: -80%;
+}
+.livro {
+  width: 100px;
+}
+h1 {
+  font-family: caveat;
+  margin-top: 230px;
+  font-size: 50px;
+}
